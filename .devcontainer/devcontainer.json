@@ -1,0 +1,34 @@
+{
+    "name": "Airflow",	
+    // "features": {},
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "airflow-webserver",
+	"workspaceFolder": "/opt/airflow",
+    "customizations": {
+		"vscode": {
+			"extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-pg",
+                "rogalmic.bash-debug",
+                "ms-azuretools.vscode-docker",
+                "dbaeumer.vscode-eslint",
+                "ecmel.vscode-html-css",
+                "timonwong.shellcheck",
+                "redhat.vscode-yaml",
+                "rogalmic.bash-debug",
+                "WesleyBatista.airflow-dag-viewer",
+                "NecatiARSLAN.airflow-vscode-extension",
+                "GraysonStream.airflow-templates",
+                "lucasmelin.airflow-snippets"
+            ]
+		},
+    "remoteUser": "root", //default
+    "forwardPorts": [
+        8080,
+		5432,
+		6379
+		//5555,
+    ]
+}
