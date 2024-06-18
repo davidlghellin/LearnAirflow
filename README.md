@@ -19,3 +19,7 @@ docker exec -it airflow-docker-airflow-webserver-1 bash
 ```sh
 curl -X GET --user "airflow:airflow" "http//:localhost:8080/api/v1/dags"
 ```
+
+## Apache Spark
+
+Master http://localhost:9090/
