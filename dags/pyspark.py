@@ -20,7 +20,7 @@ start = PythonOperator(
 
 python_job = SparkSubmitOperator(
     task_id="python_job",
-    conn_id="spark-conn",
+    conn_id="spark-david",
     application="jobs/python/wordcountjob.py",
     dag=dag
 )

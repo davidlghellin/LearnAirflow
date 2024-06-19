@@ -23,3 +23,10 @@ curl -X GET --user "airflow:airflow" "http//:localhost:8080/api/v1/dags"
 ## Apache Spark
 
 Master http://localhost:9090/
+SparkUI http://http://localhost:4040/
+
+Lanzar pyspark básico
+
+```sh
+spark-submit --name example_job_pyspark python/wordcountjob.py arg1 arg2
+```
