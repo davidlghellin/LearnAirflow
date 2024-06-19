@@ -13,4 +13,4 @@ for wc in wordCounts.collect():
     print(wc[0], wc[1])
 #time.sleep(30000)
 
-#spark.stop()
+spark.stop()

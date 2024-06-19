@@ -30,3 +30,9 @@ Lanzar pyspark básico
 ```sh
 spark-submit --name example_job_pyspark python/wordcountjob.py arg1 arg2
 ```
+
+Para compilar con sbt básico
+```sh
+cd jobs/scala/wordcount
+sbt compile publishLocal
+```
