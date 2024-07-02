@@ -23,7 +23,11 @@ curl -X GET --user "airflow:airflow" "http//:localhost:8080/api/v1/dags"
 ## Apache Spark
 
 Master http://localhost:9090/
-SparkUI http://http://localhost:4040/
+
+SparkUI http://localhost:4040/
+
+Necesitamos configurar la conexión:
+![Conection](./img-doc/image000-conection-id.png)
 
 Lanzar pyspark básico
 
