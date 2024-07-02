@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 import time
 
-spark = SparkSession.builder.appName("PythonWordCount").getOrCreate()
+spark = SparkSession.builder.appName("PythonWordCount").master("spark://spark-master:7077").getOrCreate()
 
 text = "Hello Spark Hello Python Hello Airflow Hello Docker and Hello Yusuf"
 
