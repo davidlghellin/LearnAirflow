@@ -46,3 +46,16 @@ sbt compile publishLocal
 Añadimos HDFS a nuestro cluster para usar con Spark
 
 Tenemos un generador de datos y luego los subiremos a hdfs, para ello nos con
+
+```sh
+docker exec -it learnairflow-namenode-1 /bin/bash
+python fichero.py
+hdfs dfs -put xyz_grande.csv /xyz_grande.csv
+hdfs dfs -put xyz_medio.csv  /xyz_medio.csv
+```
+
+Lanzamos desde Spark
+```sh
+docker exec -it learnairflow-spark-master-1 bash
+spark-submit --name hdfs_spark python/hdfs.py
+```
