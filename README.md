@@ -40,3 +40,9 @@ Para compilar con sbt básico
 cd jobs/scala/wordcount
 sbt compile publishLocal
 ```
+
+# HDFS
+
+Añadimos HDFS a nuestro cluster para usar con Spark
+
+Tenemos un generador de datos y luego los subiremos a hdfs, para ello nos con
