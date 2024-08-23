@@ -326,6 +326,8 @@ services:
       - ./config_hadoop
     environment:
         ENSURE_NAMENODE_DIR: "/tmp/hadoop-root/dfs/name"
+    volumes:
+      - ./jobs/python/generar_ficeros.py:/opt/hadoop/generar_ficeros.py
   datanode:
     image: apache/hadoop:3
     command: ["hdfs", "datanode"]
