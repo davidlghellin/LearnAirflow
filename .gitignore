@@ -1,4 +1,8 @@
+.DS_Store
 /logs/
 /dags/**/__pycache__
 target
 project
+
+.bsp/
+.idea/

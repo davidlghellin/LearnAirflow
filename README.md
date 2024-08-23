@@ -32,13 +32,19 @@ Necesitamos configurar la conexión:
 Lanzar pyspark básico
 
 ```sh
-spark-submit --name example_job_pyspark python/wordcountjob.py arg1 arg2
+spark-submit python/wordcountjob.py arg1 arg2
 ```
 
 Para compilar con sbt básico
 ```sh
 cd jobs/scala/wordcount
 sbt compile publishLocal
+```
+
+```sh
+cd jobs/scala/basicjob/target/scala-2.12
+sbt compile publishLocal
+spark-submit --class es.david.WordCount basic-job-scala_2.12-0.1.jar
 ```
 
 # HDFS
