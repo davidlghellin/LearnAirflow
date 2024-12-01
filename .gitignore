@@ -6,3 +6,8 @@ project
 
 .bsp/
 .idea/
+
+derby.log
+metastore_db/
+spark-warehouse/
+
