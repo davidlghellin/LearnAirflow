@@ -45,6 +45,13 @@ sbt compile publishLocal
 cd jobs/scala/basicjob/target/scala-2.12
 sbt compile publishLocal
 spark-submit --class es.david.WordCount basic-job-scala_2.12-0.1.jar
+spark-submit --class es.david.ReduceJoins basic-job-scala_2.12-0.1.jar
+```
+
+Podemos lanzar con 3 worker
+
+```sh
+docker-compose up --scale spark-worker=3 -d
 ```
 
 # HDFS
